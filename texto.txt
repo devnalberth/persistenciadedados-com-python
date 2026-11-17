@@ -1,0 +1,3 @@
+Aprendendo persistência de dados com Python.
+Listas podem ser ordenadas de várias formas.
+Arquivos de texto permitem guardar os resultados.

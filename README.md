@@ -62,9 +62,6 @@ a cada execução; o programa impede que a entrada seja usada como saída.
 | `kdd.py` | Entrega final: leitura, ordenação com o método escolhido e persistência |
 | `palavras_ordenadas.txt` | Resultado do programa final |
 | `test_projeto.py` | Verificações automatizadas de ordenação e persistência |
-| `verificacao_execucao.txt` | Registro da execução dos exemplos, comparação, programa final e testes |
-| `ENUNCIADO.md` | Cópia do enunciado fornecido |
-| `CONTINUAR_NO_VSCODE.md` | Contexto para continuar com Codex ou Claude no editor |
 
 O enunciado pede remover os outros métodos do script final após a escolha.
 Por isso, `kdd.py` contém apenas `sort()`. A etapa experimental permanece
@@ -75,8 +72,8 @@ prático por meio do link do repositório Git.
 ## Comparação registrada
 
 Execução local de **17/11/2026**, com **89 palavras**, **5 repetições**,
-Python **3.9.6** e macOS. Os valores abaixo correspondem ao JSON e à etapa
-de comparação do registro de execução atualizados nessa data.
+Python **3.9.6** e macOS. Os valores abaixo correspondem ao arquivo
+`resultados_comparacao.json` atualizado nessa data.
 
 | Método | Mediana da ordenação |
 | --- | ---: |
@@ -93,8 +90,7 @@ Foi escolhido `list.sort()` porque teve a menor mediana neste experimento.
 Os tempos são curtos e variam conforme a máquina e a carga do sistema;
 essa medição pequena não constitui um benchmark geral. Execute novamente
 no seu computador para obter suas próprias evidências. O JSON é atualizado
-ao rodar novamente a comparação; a tabela e o registro de execução não são
-atualizados automaticamente.
+ao rodar novamente a comparação; a tabela não é atualizada automaticamente.
 
 ## Como explicar o código
 
@@ -257,7 +253,6 @@ python3 -m unittest -v
 Os cinco testes cobrem os algoritmos, incluindo listas vazias, negativas,
 repetidas e 100 listas pseudoaleatórias, além da persistência UTF-8,
 arquivo vazio, proteção da entrada e arquivo inexistente.
-O registro incluído mostra os scripts executados com código de saída zero.
 Na revisão local de 17/11/2026, também foram conferidos a igualdade da saída
 com `sorted(entrada)`, as frequências de todas as palavras, as medianas do
 JSON, os caminhos personalizados com espaços, a execução a partir de outra
